@@ -1,0 +1,12 @@
+.link {
+    margin-right: 30px;
+    font-size: 18px;
+    color: #2a363b;
+}
+.activeLink {
+    composes: link;
+    color: #2196f3;
+}
+.nav {
+    padding: 30px;
+}

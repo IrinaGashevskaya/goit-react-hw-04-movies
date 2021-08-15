@@ -1,0 +1,11 @@
+.information {
+    margin-left: 30px;
+}
+.link {
+    font-size: 18px;
+    color: #2a363b;
+}
+.activeLink {
+    composes: link;
+    color: #2196f3;
+}

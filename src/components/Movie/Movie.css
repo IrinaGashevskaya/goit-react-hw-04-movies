@@ -1,0 +1,34 @@
+.Movie {
+    display: flex;
+    margin-left: 30px;
+}
+.image {
+    width: 200px;
+}
+.movie {
+    margin-left: 30px;
+}
+.Overview {
+    max-width: 900px;
+    font-size: 14px;
+    
+}
+.Genres {
+    display: flex;
+}
+.list {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+.Score {
+    font-weight: 400;
+    font-size: 14px;
+}
+.TitleOverview {
+    font-size: 22px;
+}
+.genre {
+    margin-right: 30px;
+    font-size: 12px;
+}

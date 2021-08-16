@@ -2,6 +2,7 @@ import LoaderApp from '../../components/Loader/Loader';
 import * as api from '../../components/Api/Api';
 import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+
 import './HomePage.css';
 const HomePage = () => {
   const [trends, setTrends] = useState([]);

@@ -21,7 +21,6 @@ const Cast = () => {
 
     try {
       const { cast } = await api.getMovieCredits(movieId);
-      console.log(cast);
       setActors(cast);
     } catch (error) {
       console.error('Smth wrong with fetch cast on movie page', error);

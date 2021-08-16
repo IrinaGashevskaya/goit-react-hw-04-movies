@@ -19,7 +19,7 @@ const MovieDetailsPage = () => {
   const history = useHistory();
   const location = useLocation();
   const match = useRouteMatch();
-
+  console.log(match);
   useEffect(() => {
     getData();
     // eslint-disable-next-line

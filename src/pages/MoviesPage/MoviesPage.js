@@ -4,7 +4,7 @@ import queryString from 'query-string'; // Пакет для query string
 import { ToastContainer, toast } from 'react-toastify';
 
 import SearchForm from '../../components/SearchForm/SearchForm';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Loader from '../../components/Loader/Loader';
 
@@ -72,7 +72,9 @@ const MoviesPage = () => {
       <ul>
         {movies.map(movie => (
           <li key={movie.id}>
-            <NavLink to={{ pathname: `/movies/${movie.id}` }}>{movie.title}</NavLink>
+            <Link to={{ pathname: `/movies/${movie.id}`, state: { from: `/movies?query=${query}` } }}>
+              {movie.title}
+            </Link>
           </li>
         ))}
       </ul>

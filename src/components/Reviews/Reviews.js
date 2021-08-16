@@ -15,7 +15,7 @@ const Reviews = () => {
   //const [error, setError] = useState('');
 
   const match = useRouteMatch();
-
+  console.log(match);
   // Срабатывает при маунте
   useEffect(() => {
     fetchData();
@@ -30,7 +30,7 @@ const Reviews = () => {
 
     try {
       const results = await api.getMovieReviews(movieId);
-      console.log(results);
+
       setReviews(results);
     } catch (error) {
       console.error('Smth wrong with fetch reviews on movie page', error);

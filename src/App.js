@@ -1,10 +1,10 @@
 import { lazy, Suspense } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import AppBar from './components/AppBar/AppBar';
 const HomePage = lazy(() => import('./pages/HomePage/HomePage.js'));
 const MoviesPage = lazy(() => import('./pages/MoviesPage/MoviesPage.js'));
 const MovieDetailsPage = lazy(() => import('./pages/MovieDetailsPage/MovieDetailsPage.js'));
-const NotFoundView = lazy(() => import('./pages/NotFoundView/NotFoundView.js'));
+
 const App = () => (
   <>
     <AppBar />
@@ -20,9 +20,7 @@ const App = () => (
         <Route path="/movies">
           <MoviesPage />
         </Route>
-        <Route>
-          <NotFoundView />
-        </Route>
+        <Redirect to="/" />
       </Switch>
     </Suspense>
   </>
